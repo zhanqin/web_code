@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>行情</title>
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <style>
+        #header {
+            background-color: blue;
+            height: 200px;
+            width: 100%;
+            position: fixed;
+        }
+        #header_title {
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            margin-top: 30px;
+            line-height: 80px;
+        }
+        #header_line {
+            background-color: rgba(200,200,200,0.5);
+            height: 2px;
+        }
+        #header_table {
+            border: 0;
+            width: 100%;
+            margin-top: 20px;
+            text-align: center;
+            color: white;
+            font-size: 14px;
+        }
+        #content {
+            padding-top: 200px;
+            padding-bottom: 81px;
+            overflow: auto;
+        }
+        #content_table {
+            width: 100%;
+            line-height: 80px;
+            text-align: center;
+            font-size: 14px;
+            border-collapse: collapse;
+        }
+        .content_table_tr_line {
+            border-bottom: 1px solid rgba(240,240,240,0.9);
+        }
+        #content_table span {
+            height: 30px;
+            background-color: forestgreen;
+            text-align: center;
+            color: white;
+            padding: 5px 10px;
+        }
+        #content_table img {
+            width: 40px;
+            height: 40px;
+            vertical-align: middle;
+            padding-right: 10px;
+        }
+
+    </style>
+    <script>
+        window.onload = function () {
+            var content_table = document.getElementById("content_table");
+            var len = content_table.tBodies[0].rows.length;
+            for (var i = 0;i < len;i ++){
+                if(i%2 === 0 && i !== 0){
+                    content_table.tBodies[0].rows[i].style.backgroundColor = "aliceblue";
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="header">
+        <p id="header_title">数字资产行情</p>
+        <div id="header_line"></div>
+        <table id="header_table">
+            <tr>
+                <td>实时行情</td>
+                <td>涨幅榜</td>
+                <td>跌幅榜</td>
+                <td>次新币</td>
+            </tr>
+        </table>
+    </div>
+    <div id="content">
+        <table id="content_table" cellspacing="0">
+            <tr class="content_table_tr_line">
+                <td>名称</td>
+                <td>价格</td>
+                <td>涨幅</td>
+            </tr>
+            <tr>
+                <td><img src="images/btc.png" />BTC</td>
+                <td>￥35000</td>
+                <td><span>-99.99%</span></td>
+            </tr>
+            <tr>
+                <td><img src="images/eth.png" />ETH</td>
+                <td>￥1000</td>
+                <td><span>-99.99%</span></td>
+            </tr>
+            <tr>
+                <td><img src="images/etc.png" />ETC</td>
+                <td>￥0.014</td>
+                <td><span>-99.99%</span></td>
+            </tr>
+            <tr>
+                <td><img src="images/ltc.png" />LTC</td>
+                <td>￥0.02</td>
+                <td><span>-99.99%</span></td>
+            </tr>
+            <tr>
+                <td><img src="images/bcc.png" />BCC</td>
+                <td>￥0.018</td>
+                <td><span>-100%</span></td>
+            </tr>
+            <tr>
+                <td><img src="images/ethc.png" />ETHC</td>
+                <td>￥0.017</td>
+                <td><span>-100%</span></td>
+            </tr>
+            <tr>
+                <td><img src="images/eos.png" />EOS</td>
+                <td>￥11.06</td>
+                <td><span>-10.23%</span></td>
+            </tr>
+            <tr>
+                <td><img src="images/btc.png" />BTC</td>
+                <td>￥35000</td>
+                <td><span>-99.99%</span></td>
+            </tr>
+            <tr>
+                <td><img src="images/eth.png" />ETH</td>
+                <td>￥1000</td>
+                <td><span>-99.99%</span></td>
+            </tr>
+            <tr>
+                <td><img src="images/etc.png" />ETC</td>
+                <td>￥0.014</td>
+                <td><span>-99.99%</span></td>
+            </tr>
+            <tr>
+                <td><img src="images/ltc.png" />LTC</td>
+                <td>￥0.02</td>
+                <td><span>-99.99%</span></td>
+            </tr>
+            <tr>
+                <td><img src="images/bcc.png" />BCC</td>
+                <td>￥0.018</td>
+                <td><span>-100%</span></td>
+            </tr>
+            <tr>
+                <td><img src="images/ethc.png" />ETHC</td>
+                <td>￥0.017</td>
+                <td><span>-100%</span></td>
+            </tr>
+            <tr>
+                <td><img src="images/eos.png" />EOS</td>
+                <td>￥11.06</td>
+                <td><span>-10.23%</span></td>
+            </tr>
+        </table>
+    </div>
+    <div id="footer">
+        <div id="footer_line"></div>
+        <table id="footer_table">
+            <tr>
+                <td><a href="day04_04.html" style="color: dodgerblue"><img src="images/hqa.png" />行情</a></td>
+                <td><a href="day06_01.html"><img src="images/fxb.png" />发现</a></td>
+                <td><a href="day05_08.html"><img src="images/lcb.png" />理财</a></td>
+                <td><a href="day06_02.html"><img src="images/zxb.png" />商城</a></td>
+                <td><a href="day06_03.html"><img src="images/myb.png" />我</a></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
